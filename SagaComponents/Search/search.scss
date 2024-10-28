@@ -1,0 +1,15 @@
+.saga-search {
+  .el-form-item {
+    width: 100%;
+  }
+  .handle-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+  .el-form-item__content {
+    > div:first-child {
+      width: 100%;
+    }
+  }
+}

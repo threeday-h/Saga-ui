@@ -1,0 +1,42 @@
+.saga-fold-buttons {
+  display: flex;
+  align-items: center;
+  .el-link,
+  .el-dropdown {
+    margin: 0 3px;
+  }
+}
+
+.el-popover.el-popper.saga-fold-buttons__popper {
+  &,
+  * {
+    box-sizing: border-box;
+  }
+  min-width: 90px;
+  padding: 5px 0;
+}
+
+.saga-fold-buttons__dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  > .el-link {
+    flex-shrink: 0;
+    line-height: 22px;
+    padding: 5px 16px;
+    width: 100%;
+    margin: 0;
+    font-size: var(--el-font-size-base);
+    color: var(--el-text-color-regular);
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      background-color: var(--el-color-primary-light-9);
+      color: var(--el-color-primary);
+      border: none;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
